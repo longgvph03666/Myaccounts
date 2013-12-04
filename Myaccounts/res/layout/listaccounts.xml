@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/listAccounts"
+        android:layout_width="match_parent"
+        android:layout_height="4dp" >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnAddAccount"
+            android:layout_width="match_parent"
+            android:layout_height="168dp"
+            android:onClick="addAccount"
+            android:text="Add Account" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnAddTransaction"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_weight="0.74"
+        android:onClick="addTransaction"
+        android:text="Add Transaction" />
+
+    <Button
+        android:id="@+id/btnRecentTransactions"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_weight="0.96"
+        android:onClick="recentTransactions"
+        android:text="Recent Transaction" />
+
+</LinearLayout>
